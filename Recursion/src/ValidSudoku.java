@@ -15,17 +15,18 @@ public class ValidSudoku {
         };
         sudoku(board, 0, 0);
 
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
-                System.out.print(board[i][j] + " ");
-
-            }
-            System.out.println();
-
-        }
-
+//        for (int i = 0; i < board.length; i++) {
+//            for (int j = 0; j < board[0].length; j++) {
+//                System.out.print(board[i][j] + " ");
+//
+//            }
+//            System.out.println();
+//
+//        }
+//        int n=5-'1';
+        int n=5;
+        System.out.println(~5);
     }
-
     private static boolean sudoku(char[][] ar, int r, int c) {
         if (r == ar.length) return true;
         if (c == ar[0].length) return sudoku(ar, r + 1, 0);
